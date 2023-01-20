@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SEPATUKU.SUB</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="row full-size align-items-center">
+				<div class="col">
+					<div class="row text-center mb-5">
+						<div class="col-md-3 m-auto">
+							<h4 class="ls-2">SEPATUKU.SUB</h4>
+							<p class="fs-6">PREMIUM SHOES TREATMENT</p>
+						</div>
+					</div>
+					<div class="row text-center mb-4">
+						<div class="col-md-3 mx-auto">
+							<label for="search" class="form-label mb-3">
+								MASUKKAN NOMER RESI :
+							</label>
+							<div class="input-group mb-3 rounded-pill">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="Nomer Resi...."
+									id="search"
+								/>
+								<button
+									id="cariResi"
+									class="btn btn-outline-secondary"
+									type="button"
+									id="button-addon2"
+									onclick="cari()"
+								>
+									Cari
+								</button>
+							</div>
+							<p id="invalid-feedback" class="text-danger invisible">
+								Data tidak ditemukan
+							</p>
+						</div>
+					</div>
+					<div class="row text-center">
+						<div class="col-md-3 mx-auto">
+							<div
+								id="spinner"
+								class="spinner-border text-light hidden"
+								role="status"
+							>
+								<span class="visually-hidden">Loading...</span>
+							</div>
+							<button
+								id="searchButton"
+								class="button rounded-pill hidden"
+								data-bs-toggle="modal"
+								data-bs-target="#staticBackdrop"
+							>
+								<span class="icon"><i class="bi bi-search fw-bolder"></i></span>
+								Lihat
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div
+			class="modal fade"
+			id="staticBackdrop"
+			data-bs-backdrop="static"
+			data-bs-keyboard="false"
+			tabindex="-1"
+			aria-labelledby="staticBackdropLabel"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content" id="popup">
+					<div class="modal-header">
+						<h1 class="modal-title fs-4" id="staticBackdropLabel">
+							SEPATUKU.SUB
+						</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body text-light">
+						<div class="row mb-3">
+							<div class="col-6">NAMA PELANGGAN</div>
+							<div id="pelanggan" class="col-6 value"></div>
+						</div>
+						<div class="row mb-3">
+							<div class="col-6">NO MEMBERSHIP</div>
+							<div id="member" class="col-6 value"></div>
+						</div>
+						<div class="row mb-3">
+							<div class="col-6">LAYANAN</div>
+							<div id="layanan" class="col-6 value"></div>
+						</div>
+						<div class="row mb-3">
+							<div class="col-6">STATUS LAYANAN</div>
+							<div id="status" class="col-6 value"></div>
+						</div>
+						<div class="row mb-3">
+							<div class="col-6">BEFORE AFTER</div>
+							<div id="gambar" class="col-6 value"></div>
+						</div>
+					</div>
+					<div class="modal-footer text-center text-light">
+						<p id="footerModal" class="mx-auto">
+							TERIMA KASIH TELAH MEMPERCAYAI TOKO KAMI ;)
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="container">
+			<div class="row justify-content-center">
+				<div class="row col-lg-5 justify-content-center">
+					<a
+						target="_blank"
+						class="col text-center"
+						href="https://www.instagram.com/sepatuku.sub/"
+					>
+						<i class="bi bi-instagram"></i>
+						SEPATUKU.SUB
+					</a>
+					<a
+						target="_blank"
+						class="col text-center"
+						href="http://wa.me/+6283116070013?text=Hallo%20Selamat%20Datang%20di%20Sepatuku.SUB"
+					>
+						<i class="bi bi-whatsapp"></i>
+						083116070013
+					</a>
+					<a
+						target="_blank"
+						class="col text-center"
+						href="https://www.google.com/maps/place/Sepatuku.SUB/@-7.282003,112.8007865,17z/data=!3m1!4b1!4m5!3m4!1s0x2dd7fb7f215941ed:0x9a9a908438c67850!8m2!3d-7.2819836!4d112.8007861"
+					>
+						<i class="bi bi-geo-alt"></i>
+						SEPATUKU.SUB
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+			crossorigin="anonymous"
+		></script>
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,92 @@
+body {
+	background-color: #124a6b;
+	color: #b0bba7;
+}
+
+.full-size {
+	height: 99vh;
+}
+
+@media screen and (max-width: 576px) {
+	#search {
+		width: 70%;
+		margin: auto;
+	}
+
+	.button {
+		font-weight: bolder;
+	}
+}
+
+#search {
+	border: none;
+	background-color: #fffefd;
+	color: #124a6b;
+}
+
+#search:focus {
+	box-shadow: none;
+}
+
+.button {
+	background-color: #fffefd;
+	border: none;
+	padding: 1px 1px;
+	padding-right: 10px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	color: #124a6b;
+}
+
+#cariResi {
+	color: #b0bba7;
+}
+
+.icon {
+	background-color: #15486b;
+	display: inline-block;
+	padding: 3px 6px;
+	border-radius: 50%;
+	margin: 4px;
+	color: #fffefd;
+}
+
+footer a {
+	color: #b0bba7;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #b0bba7;
+}
+
+footer {
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+	left: 0;
+}
+
+#popup {
+	background-color: #124a6b;
+}
+
+.hidden {
+	display: none;
+}
+
+.ls-5 {
+	letter-spacing: 5px;
+}
+.ls-4 {
+	letter-spacing: 4px;
+}
+.ls-3 {
+	letter-spacing: 3px;
+}
+.ls-2 {
+	letter-spacing: 2px;
+}
+.ls-1 {
+	letter-spacing: 1px;
+}
